@@ -19,13 +19,17 @@ body {
     display: grid;
     place-items: center;
 
-    background: #e5e5e5;
+    background: #15101b;
+    background: url(img/desktop.png) center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main {
     background: url(img/bg.svg);
     width: 375px;
     height: 812px;
+    border-radius: .2rem;
 }
 
 .container {
@@ -93,4 +97,12 @@ ul {
     gap: 0.5rem;
 
     justify-content: center;
+}
+
+.rocketseat {
+    margin-top: 5rem;
+}
+
+.rocketseat img {
+    width: 7rem;
 }

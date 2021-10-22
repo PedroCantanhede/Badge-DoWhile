@@ -1,6 +1,8 @@
+// Changing social media links 
+
 const links = {
     github: 'PedroCantanhede',
-    youtube: 'jakelinygracielly',
+    youtube: 'channel/UCMGt42sCYClIWQbrFBP9q4A',
     instagram: 'pedro_cantanhede',
     facebook: 'pedro.cantanhede',
     twitter: 'iEdcold'
@@ -12,8 +14,28 @@ function changeSocialMediaLinks() {
 
         li.children[0].href = `https://${socialMedia}.com/${links[socialMedia]}`;
 
-        alert(li.children[0].href);
     }
 }
 
 changeSocialMediaLinks();
+
+// API - GITHUB
+
+function getGitHubProfileInfos() {
+    const url = `https://api.github.com/users/${links.github}`;
+
+    fetch(url)
+    .then(response => 
+        response.json()    
+    )
+    .then(data => {
+        userName.textContent = data.name
+        userGitHub.href = data.html_url
+        userBio.textContent = data.bio
+        userImage.src = data.avatar_url
+        userLogin.textContent = data.login
+    })
+
+}
+
+getGitHubProfileInfos();
