@@ -5,6 +5,7 @@ const links = {
     youtube: 'channel/UCMGt42sCYClIWQbrFBP9q4A',
     instagram: 'pedro_cantanhede',
     facebook: 'pedro.cantanhede',
+    linkedin: 'in/pedro-cantanhede/',
     twitter: 'iEdcold'
 }
 
